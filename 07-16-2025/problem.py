@@ -7,9 +7,9 @@ class Solution(object):
         words = s.split()
         print(words)
         reverse = ''
-        while len(words) > 0:
+        while len(words) > 1:
             reverse += words.pop() + ' '
-        return reverse 
+        return reverse + words.pop()
 
 
 print(Solution().reverseWords("Let's take LeetCode contest"))
