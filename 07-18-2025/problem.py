@@ -9,3 +9,15 @@ class Solution(object):
             for j in range(i + 1, len(nums)):
                 if nums[i] + nums[j] == target:
                     return [i, j]
+                
+
+        # optimal solution
+        # hash_map = {}
+        # for i, num in enumerate(nums):
+        #     complement = target - num
+
+        #     if complement in hash_map:
+        #         return [hash_map[complement],i]
+            
+        #     hash_map[num] = i
+        
