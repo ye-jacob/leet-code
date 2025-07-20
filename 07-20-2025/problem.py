@@ -6,7 +6,11 @@ class Solution(object):
         :rtype: float
         """
         merged = nums1 + nums2
-        return print(merged)
+        merged.sort()
+        if len(merged) % 2 == 0:
+            return (merged[len(merged) // 2 - 1] + merged[len(merged) // 2]) / 2
+        else:
+            return merged[len(merged) // 2]
 
 soltuion = Solution()
 print(soltuion.findMedianSortedArrays([1,3], [2]))
